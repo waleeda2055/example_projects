@@ -1,0 +1,23 @@
+this assumes the two files are in the folder "MyTest"
+See where the files are loaded (_file0, _file1) and make sure it points to the correct location
+
+the output plots are put in the folder "plotDir = OutputPlots/LHOverlays"
+
+either create that directory or change it to somethign that exists. I suggest that it's a directory, though, because there are lots of output files!
+
+Then, do:
+
+root -l -b AtlasStyle.C AtlasLabels.C
+...
+root will load...
+warnings about AtlasLabels are fine
+
+For x,y axes labels to appear
+SetAtlasStyle()
+
+then do:
+.x makeLHProfiles.cxx
+
+and it should spit out a bazillion plots, into the directory you created. running wiht -b means that you dont' show the canvas as you're running, which is useful if you're tunneling from lxplus.
+
+then, just scp the directory locally and enjoy the plots!
