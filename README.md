@@ -1,6 +1,6 @@
 # example_projects
 
-Coding examples from some projects I have worked on. These are team projects and the code has been built in colloboration with others. 
+Coding examples from some projects I have worked on. Some are team projects and the code has been built in colloboration with others. 
 
 <!---
 ## Getting started
